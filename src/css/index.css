@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ===== Root & Global ===== */
+:root {
+  --primary-color: #12B886;
+  --gray-: #515252;
+  --gray-200: #868E96;
+  --bg-input-color: #F1F3F5;
+  --text-color: #212529;
+  --light-green: hsla(162, 82%, 40%, 0.05);
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ===== NAV & HEADER ===== */
+
+.wrapper {
+  margin-left: 1.3rem;
+}
+
+header h3 {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+}
+
+nav {
+  overflow-x: auto;
+  display: flex;
+  gap: 1.2rem;
+  padding-bottom: 1.2rem ;
+}
+
+nav a {
+  background-color: var(--light-green);
+  color: var(--primary-color);
+  padding: 1.4rem 2.6rem;
+  border-radius: 8px;
+  font-size: 1.6rem;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+nav a:hover {
+  background-color: var(--primary-color);
+  color: white;
+
+  transition: 300ms;
+}
+
+nav a.selected {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* ===== SEARCH BAR ===== */
+
+
+.search-bar { 
+  display: flex;
+  flex-direction: row;
+  height: 5.2rem;
+  margin-top: 1.2rem;
+  gap: 1.8rem;
+}
+.search-bar input {
+  font-size: 1.6rem;
+  color: var(--gray-);
+  background-color: var(--bg-input-color);
+
+  border: none;
+  border-radius: 8px;
+
+  padding-block: 1.4rem;
+  padding-left: 2rem;
+  width: 75%;
+}
+
+.search-bar button {
+  background-color: var(--primary-color);
+  border-radius: 8px;
+  border: none;
+
+  height: 5.2rem;
+  width: 6rem;
+}
+
+/* ===== CARDS & CARD ===== */
+
+.cards {
+  margin-top: 2.4rem;
+  padding-bottom: 2.2rem;
+  display: flex;
+  gap: 2.5rem;
+  overflow-x: auto;
+}
+
+.card {
+  width: 27.5rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.6rem;
+}
+
+
+
+.card h4 {
+  color: var(--text-color);
+  margin-block: 1.6rem;
+}
+
+.card span {
+  color: var(--gray-);
+  font-size: 1.2rem;
+}
+
+.card .price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card .price span {
+  margin-top: 1.6rem;
+  color: var(--text-color);
+}
+.card .price button{
+  font-size: 1.1rem;
+  width: fit-content;
+  background-color: var(--light-green);
+  border: none;
+  border-radius: 8px;
+  text-align: center;
+  padding: 0.7rem 1rem;
+  color: var(--primary-color);
+}
+
+
+/* ===== CART & BAG ===== */
+
+
+.cart header {
+  margin-top: 2rem;
+  background-color: var(--primary-color);  
+  height: 4.2rem;
+  border-radius: 12px 12px 0px 0px;
+  margin-inline: 1.3rem;
+  display: flex;
+  gap: 1.2rem;
+}
+
+.cart img {
+  width: 5%;
+  margin-left: 1.1rem;
+}
+
+.cart span{
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  color: white;
+}
+
+.bag {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bag img {
+  margin-top: 4.6rem;
+}
+
+.bag p {
+  margin-top: 3.5rem;
+  width: 24.3rem;
+  color: var(--gray-200);
+  font-size: 1.4rem;
+  text-align: center;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./src/css/index.css">
+  <title>Shop Now</title>
+</head>
+<body>
+  <header>
+    <div class="wrapper">
+    <h3>Shop now</h3>
+
+    <nav>
+      <a id="all" class="selected" onclick="onClickNav()" >Todos Produtos</a>
+      <a id="horti" href="#">Hortifruit</a>
+      <a id="bakery" href="#">Panificadora</a>
+      <a id="milk" href="#">Laticínios</a>
+    </nav>
+
+    <div class="search-bar">
+      <input type="search"
+      class="input__search"
+      placeholder="Pesquisar por" />
+
+      <button>
+        <img src="./src/assets/svg/search.svg" alt="Pesquisar">
+      </button>
+    </div>
+
+    </div>
+  </div>
+  </header>
+
+  <main>
+    <section class="">
+      <div class="wrapper">
+        <div class="cards">
+          <div id="" class="card">
+            <img src="./src/assets/images/morango.png" alt="morango">
+            <h4>Morango</h4>
+            <span>Hortifruit</span>
+            <div class="price">
+            <span class="price">R$ 7.00</span>
+            <button>Comprar</button>
+            </div>
+            
+          </div>
+
+          <div id="" class="card">
+            <img src="./src/assets/images/banana.png" alt="banana">
+            <h4>Banana</h4>
+            <span>Hortifruit</span>
+            <div class="price">
+            <span class="price">R$ 7.00</span>
+            <button>Comprar</button>
+            </div>
+            
+          </div>
+        </div>
+
+        <div class="cart">
+          <header>
+            <img src="./src/assets/svg/cart.svg" />
+            <span>Carrinho</span>
+          </header>
+        </div>
+
+          <div class="bag">
+            <img src="./src/assets/svg/bag.svg" alt="">
+            <p>Por enquanto não temos produtos no carrinho</p>
+          </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="./src/js/nav.js"></script>
+</body>
+</html>
