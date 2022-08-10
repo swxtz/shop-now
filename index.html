@@ -12,14 +12,15 @@
     <div class="wrapper">
     <h3>Shop now</h3>
 
-    <nav>
+    <nav class="col-a">
+      <div>
       <a id="all" class="selected" onclick="onClickNav()" >Todos Produtos</a>
       <a id="horti" href="#">Hortifruit</a>
       <a id="bakery" href="#">Panificadora</a>
       <a id="milk" href="#">Laticínios</a>
-    </nav>
+    </div>
 
-    <div class="search-bar">
+    <div class="search-bar col-b">
       <input type="search"
       class="input__search"
       placeholder="Pesquisar por" />
@@ -28,7 +29,7 @@
         <img src="./src/assets/svg/search.svg" alt="Pesquisar">
       </button>
     </div>
-
+    </nav>
     </div>
   </div>
   </header>
@@ -36,6 +37,8 @@
   <main>
     <section class="">
       <div class="wrapper">
+
+        <div class="desktop-only">
         <div class="cards">
           <div id="" class="card">
             <img src="./src/assets/images/morango.png" alt="morango">
@@ -58,8 +61,42 @@
             </div>
             
           </div>
+
+          <div id="" class="card">
+            <img src="./src/assets/images/maca.png" alt="Maçã">
+            <h4>Maçã</h4>
+            <span>Hortifruit</span>
+            <div class="price">
+            <span class="price">R$ 2.00</span>
+            <button>Comprar</button>
+            </div>
+            
+          </div>
+
+          <div id="" class="card">
+            <img src="./src/assets/images/pao.png" alt="Pão">
+            <h4>Pão</h4>
+            <span>Panificadora</span>
+            <div class="price">
+            <span class="price">R$ 4.00</span>
+            <button>Comprar</button>
+            </div>
+            
+          </div>
+
+          <div id="" class="card">
+            <img src="./src/assets/images/leite.png" alt="Leite">
+            <h4>Leite</h4>
+            <span>Laticinio</span>
+            <div class="price">
+            <span class="price">R$ 5.00</span>
+            <button>Comprar</button>
+            </div>
+            
+          </div>
         </div>
 
+        <div class="desktop-only__cart">
         <div class="cart">
           <header>
             <img src="./src/assets/svg/cart.svg" />
@@ -71,6 +108,8 @@
             <img src="./src/assets/svg/bag.svg" alt="">
             <p>Por enquanto não temos produtos no carrinho</p>
           </div>
+        </div>
+        </div>
       </div>
     </section>
 

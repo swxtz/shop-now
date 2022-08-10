@@ -1,13 +1,13 @@
-const onClickAll = document.getElementById('all')
+// const onClickAll = document.getElementById('all')
 
-function onClickNav() {  
-    all.classList.remove('selected')
+// function onClickNav() {  
+//     all.classList.remove('selected')
 
-    if() {
+//     if() {
       
-    }
+//     }
 
-}
+// }
 
 
 
